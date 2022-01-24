@@ -5,3 +5,6 @@ Start in your command line the css compile watch as described below and start yo
 
 ## Css compiler
 `npx tailwindcss -i ./src/main.css -o ./dist/main.css --watch`
+
+## Production
+`npx tailwindcss -o ./dist/main.css --minify`

@@ -1,6 +1,9 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
+    fontFamily: {
+      sans: ['HCo Gotham', 'sans-serif']
+    },
     colors: {
       'main-purple': '#66c',
       'main-purple-dark': '#5b5bb7',
@@ -18,17 +21,11 @@ module.exports = {
     extend: {
       keyframes: {
         wiggle: {
-          '0%, 100%': {
-            transform: 'rotate(-3deg)'
-          },
-          '50%': {
-            transform: 'rotate(3deg)'
-          },
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
         },
         'moveup': {
-          '0%': {
-            transform: 'translate3d(0, 0, 0)', opacity: 1,
-          },
+          '0%': {  transform: 'translate3d(0, 0, 0)', opacity: 1 },
           '100%': { transform: 'translate3d(0, -15px, 0)', opacity: 1 }
         },
         'movedown': {
@@ -44,6 +41,46 @@ module.exports = {
     },
   },
   plugins: [],
+  corePlugins: [
+    "preflight",
+    "animation",
+    "boxSizing",
+    "margin",
+    "padding",
+    "width",
+    "height",
+    "container",
+    "alignContent",
+    "alignItems",
+    "backgroundColor",
+    "borderRadius",
+    "borderWidth",
+    "borderColor",
+    "display",
+    "flex",
+    "flexDirection",
+    "flexGrow",
+    "fontSize",
+    "fontWeight",
+    "gap",
+    "gridColumn",
+    "gridRow",
+    "gridTemplateRows",
+    "gridTemplateColumns",
+    "justifyContent",
+    "justifyItems",
+    "inset",
+    "lineHeight",
+    "space",
+    "zIndex",
+    "fontFamily",
+    "maxWidth",
+    "outlineStyle",
+    "overflow",
+    "position",
+    "textColor",
+    "textAlign",
+  ]
 }
 
 
